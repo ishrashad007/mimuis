@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<title>restaurant</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<style>
+body {font-family: "Lato", sans-serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Home delivery</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="#slideshow" class="w3-bar-item w3-button" onclick="toggleFunction()">Slideshow</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="https://i.ibb.co/kBTf445/jason-leung-po-I7-Del-Fi-VA-unsplash.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge w3-center w3-white">MIMUIS Restaurant</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="https://i.ibb.co/KycS5n3/bundo-kim-Pb9b-Uz-H1n-D8-unsplash.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Our Restaurant</h1><br>
+      <h5 class="w3-center">Tradition since 2015</h5>
+      <p class="w3-large">Our restaurant properties that offer their guests the highest levels of luxury through personalized services, a vast range of amenities, and sophisticated accommodations. Though there is no standard rating system for hotels, properties earn five-star distinction by providing guests experiences that meet or exceed even the highest of expectations for comfort, décor, and luxury. </p>
+     <p class="w3-large">Our restaurant employees should be polite, attentive, discreet, and can anticipate guests’ needs. All-in-all, consistently flawless excellence is the expectation. </p>
+<ul>
+     <li>Standalone concierge staff available at least 16 hours a day</li> 
+    <li> A high staff-to-room ratio—ideally above 2.5</li> 
+    <li>Multilingual staff</li> 
+      <li>24-hour reception, room service, valet parking, butler, doorman</li> 
+        <li> Nightly turndown </li> 
+          <li> Daily housekeeping that is also available upon request at any time</li> 
+            <li> Laundry, ironing, dry cleaning, and shoe polishing</li> 
+              <li> Guest elevators separate from staff elevators.</li> 
+                <li> Luggage storage in which bags are out of guest view</li> 
+                  <li>  Fine dining restaurant(s) and a standalone lounge and/or bar</li> 
+                    <li>  Transfers and executive or house car</li> 
+                      <li> Childcare</li> 
+
+    </ul>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Our Menu</h1><br>
+      <h4>Biriyani Items</h4>
+      <p class="w3-text-grey">Chicken Biriyani, Beef Biriyani, Mandhi</p><br>
+    
+      <h4>Gravy Items</h4>
+      <p class="w3-text-grey">Chicken Gravy, Butter Nan, Chicken Chilli</p><br>
+    
+      <h4>Burger</h4>
+      <p class="w3-text-grey">Chicken Burger, Cheese Burger, Vegitable Burger</p><br>
+    
+      <h4>Pizza</h4>
+      <p class="w3-text-grey">Chicken Pizza, Beef Pizza, Cheese Pizza,MIMUIS Special Pizza </p><br>
+    
+      <h4>Sandwich</h4>
+      <p class="w3-text-grey">Chicken Sandwich, Cheese Sandwich, Vegitable Sandwich</p>    
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="https://i.ibb.co/fG0fqSz/shreyak-singh-0j4bisy-Po3-M-unsplash.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+  <!--gallery slideshow section-->
+  <div class="w3-content" style="max-width:800px" id="slideshow">
+    <img class="mySlides" src="https://i.ibb.co/CKqSRXK/mae-mu-IZ0-LRt1khg-M-unsplash.jpg" style="width:100%">
+    <img class="mySlides" src="https://i.ibb.co/HV7MGS2/robin-stickel-tzl1-UCXg5-Es-unsplash.jpg" style="width:100%">
+    <img class="mySlides" src="https://i.ibb.co/QDVtGZ4/thomas-tucker-MNtag-e-XMKw-unsplash.jpg" style="width:100%">
+  </div>
+  
+  <div class="w3-center">
+    <div class="w3-section">
+      <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+      <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+    </div>
+    <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+    <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+    <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+  </div>
+  
+
+  <!-- Contact Section -->
+  <div class="w3-content w3-container w3-padding-64" id="contact">
+   
+    <p class="w3-center"><em>I'd love your feedback!</em></p>
+  
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-col m4 w3-container">
+        
+      </div><img src="https://i.ibb.co/zmQBShM/daria-nepriakhina-p-ZA4e-NKBz20-unsplash.jpg" class="w3-image w3-round" style="width:100%">
+      <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> India, Kerala<br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone:+917356514442<br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: ishrashad007@mail.com<br>
+        </div>
+       
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-right w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+ 
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-grey w3-padding-64">
+  
+  
+ 
+ 
+  
+  <p>Powered by <a href="" target="_blank">ishrashad007</a></p>
+</footer>
+
+
+
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-red", "");
+    }
+    x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " w3-red";
+  }
+  </script>
+  
+</body>
+</html>
+
+
+
+
+
+
